@@ -46,15 +46,10 @@
     <footer>
         <p>&copy; Web Performance 2014 <span id="crp-stats"></span></p>
     </footer>
-    <script>
-        (function (w, g) {
-            w['GoogleAnalyticsObject'] = g;
-            w[g] = w[g] || function () { (w[g].q = w[g].q || []).push(arguments) }; w[g].l = 1 * new Date();
-        })(window, 'ga');
-        ga('create', 'UA-XXXX-Y');
-        ga('send', 'pageview');
-    </script>
     <script async src="http://www.google-analytics.com/analytics.js"></script>
     <script async src="js/perfmatters.js"></script>
+    <script>
+        (function (e, t) { e["GoogleAnalyticsObject"] = t; e[t] = e[t] || function () { (e[t].q = e[t].q || []).push(arguments) }; e[t].l = 1 * new Date })(window, "ga"); ga("create", "UA-XXXX-Y"); ga("send", "pageview");
+    </script>
 </body>
 </html>
