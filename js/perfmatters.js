@@ -1,11 +1,1 @@
-function logCRP() {
-  var t = window.performance.timing,
-    dcl = t.domContentLoadedEventStart - t.domLoading,
-    complete = t.domComplete - t.domLoading;
-  var stats = document.getElementById("crp-stats");
-  stats.textContent = 'DCL: ' + dcl + 'ms, onload: ' + complete + 'ms';
-}
-
-window.addEventListener("load", function(event) {
-  logCRP();
-});
+function logCRP() { var c = window.performance.timing, d = c.domContentLoadedEventStart - c.domLoading, a = c.domComplete - c.domLoading; var b = document.getElementById("crp-stats"); b.textContent = "DCL: " + d + "ms, onload: " + a + "ms" } window.addEventListener("load", function (a) { logCRP() });
